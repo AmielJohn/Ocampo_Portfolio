@@ -191,3 +191,9 @@ img{
 .msoffice .progress-bar-inner {
     width: 95%;
 }
+
+/*section4*/
+.section4{
+    height: 100vh;
+    border: 10px solid black;
+}
