@@ -31,10 +31,9 @@ header{
     border-radius: 50%;
     object-fit: cover;
 }
-.hero{
+.profile{
     height: 700px;
     width: 100%;
-    border: 2px sold black;
     display: flex;
     align-items: center;
     justify-content: center;
