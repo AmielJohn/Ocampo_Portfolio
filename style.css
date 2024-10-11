@@ -237,3 +237,28 @@ img{
     display: block;
     border-radius: 5px;
 }
+
+
+/*section5*/
+.section5{
+    height: 100vh;
+    background-image: url(pics/game-section-bg.jpg);
+    border: white 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-container h1 {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    width: 100%;
+    height: auto;
+}
