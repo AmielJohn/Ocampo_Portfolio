@@ -8,78 +8,82 @@
 /*section1*/
 .section1{
     height: 100vh;
-    background-image: url(pics/background.jpg);
-    border: #fff solid 10px;
+    padding: 50px;
+    background-image: url(pics/SECTION1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
 }
-header{
+header {
+    position: absolute;
+    top: 0;
     height: 130px;
     width: 100%;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: larger;
-    border: 2px double white;
-    background-image: url(pics/GALAXY.gif);
-    border-radius: 0 0 50px 50px;
+    background-color: #003297;
+    border-bottom: white solid 4px;
 }
-.logo{
-    margin-left: 30px;
-    width: 100px;
-    height: auto; 
-    max-width: 100%;
+
+header .logo {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
     border-radius: 50%;
-    object-fit: cover;
+    margin-left: 35px;
 }
-.profile{
-    height: 700px;
-    width: 100%;
+
+nav ul {
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    gap: 50px;
+    font-size: x-large;
 }
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-    border: 10px solid white;
-    border-radius: 15px;
-    width: 1000px;
-    height: 400px;
-    position: relative;
-}
-.profile img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 2px solid white;
-    object-fit: cover;
-    margin-right: 20px;
-}
-.details{
+
+li a {
     color: white;
-}
-.details h2 {
-    font-size: 50px;
+    text-decoration: none;
     font-weight: bold;
-    margin: 0; 
 }
-.details h3 {
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 5px;
-    text-transform: uppercase;
-    border-top: 2px solid white;
-    padding-top: 5px;
+.info {
+    color: white;
+    text-align: left;
+    position: absolute;
+    left: 40px;
+    top: 490px;
+}
+.info h1 {
+    font-size: 90px;
+}
+.info p {
+    font-size: 30px;
+}
+.image {
+    width:1000px;
+    height:auto;
+    position: absolute;
+    right: 0%;
+}
+audio {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 /*section2*/
 .section2{
     height: 100vh;
     width: 100%;
-    background-image: url(pics/bg1.jpg);
+    padding: 50px;
+    background-image: url(pics/SECTION4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +102,7 @@ header{
     width: 25%;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius:0 0 20px 20px;
-    background-color: black;
+    background-color: #242424;
 }
 .img{
     height: 50%;
@@ -135,13 +139,12 @@ img{
     height: 10vh;
 }
 
+
+
 /*section3*/
 .section3{
     height: 100vh;
-    background-image: url(pics/stats\ bg.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: white solid 10px;
+    background-color: #0044cd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,16 +200,16 @@ img{
 /*section4*/
 .section4{
     height: 100vh;
-    border: 10px solid black;
-    background-image: url(pics/bg2.jpg);
+    background-image: url(pics/SECTION2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border: #000 solid 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .gallery-container {
-    background-color: white;
+    background-color: #1D1D1D;
     padding: 50px;
     border-radius: 10px;
     text-align: center;
@@ -216,7 +219,7 @@ img{
 }
 
 .gallery-container h1{
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 
@@ -242,14 +245,19 @@ img{
 /*section5*/
 .section5{
     height: 100vh;
-    background-image: url(pics/game-section-bg.jpg);
-    border: white 10px solid;
+    background-image: url(pics/SECTION3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
+.video-container{
+    position: absolute;
+    margin-bottom: 180px;
+}
 .video-container h1 {
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     font-size: 32px;
     margin-bottom: 20px;
     color: white;
@@ -258,72 +266,13 @@ img{
     align-items: center;
 }
 .video{
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    width: 100%;
+    width: 100;
     height: auto;
 }
-
-
-/*section6*/
-.section6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(pics/bg-clients.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: #000 solid 10px;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.form-container {
-    background-image: url(pics/GALAXY.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: #fff solid 2px;
-    margin-top:90px;
-    color: #fff;
-    padding: 100px;
-    border-radius: 90px;
-    width: 700px;
-    text-align: left;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.form-container h2 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 30px;
-}
-input[type="text"], input[type="email"], input[type="tel"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-}
-button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #0044cc;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
 footer {
-    background-image: url(pics/GALAXY.gif);
-    border: #fff solid 2px;
-    border-radius: 50px 50px 0 0;
-    padding: 20px;
+    background-color: #0044cd;
+    border-top: #fff solid 2px;
+    padding: 2px;
     width: 100%;
     margin-top: auto;
     display: flex;
@@ -360,4 +309,27 @@ footer .contact-info {
 .social-media{
     display: flex;
     gap: 15px;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input[type="email"] {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #9b9a99;
 }
